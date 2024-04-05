@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,900");
+
+
+*{
+    font-family: sans-serif,"Poppins";
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 100vh;
+    color: antiquewhite;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background-color: #521950;
+}
+.sidebar:hover {
+    width: 210px;
+    transition: 0.5s;
+}
+
+.logo{
+    position: relative;
+    top: 100px;
+    height: 80px;
+    padding: 0px;
+
+}
+.main{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.main li{
+    padding: 1rem;
+    margin: 10px;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+
+}
+.main li:hover,
+.active{
+    background-color: #AD6FEF;
+    text-align: left;
+
+}
+.main a{
+    color: #caabcf;
+    font-size: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 15px;
+}
+.menu a span{
+    overflow: hidden;
+    font-size: 10px;
+}
+.menu a i{
+    font-size: 1.2rem;
+}
+.logout{
+    position: relative;
+    top: 350px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin-left: 220px;
+    margin-top: 50px;
+}
+.header{
+    background-color: #882897;
+    height: 70px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 2;
+    padding-right: 30px;
+    border-radius: 10px;
+    
+}
+.headertitel{
+    margin-top: -40px;
+    text-align: left;
+    justify-content:  center;
+    color: white;
+}
+.image{
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    border-radius:50%;  
+}
+h2{
+    position: relative;
+    top: 20px;
+    font-family: "Poppins";
+    padding: 10px;
+    font-size: 30px;
+    border-radius:10px ;
+}
+.userinfo{
+    display: flex;
+    align-items: center;
+    gap: 1;
+}
+.search{
+    display: flex;
+    background: #caabcf;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+}
+.search input{
+    color: white;
+    border: none;
+    background: transparent;
+    padding: 10px;
+}
+.search i{
+    justify-content: right;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+.table-container {
+    position: relative;
+    top: -20px;
+    /* background-color: #161016; */
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    border-collapse: collapse;
+}
+
+.my-table {
+  position: relative;
+  justify-content: space-between;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.my-table thead tr td button {
+    background-color: #882897;
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+.my-table tbody tr td button{
+    background-color: #882897;
+    border: none;
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    /* margin: 20px; */
+    cursor: pointer;
+    
+}
+.btntmbh{
+    font-size: 10px;
+    color: azure;
+    font-family: "Poppins";
+}
+
+.my-table thead tr td button:hover{
+    background-color: #521950;
+}
+
+.my-table tbody tr td button:hover{
+    background-color: #521950;
+}
+
+.my-table thead tr th{
+    /* background-color: #521950; */
+    padding: 10px 50px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-collapse: collapse;
+
+}
+
+.my-table tbody tr td{
+    /* background-color: #b079b9; */
+    padding: 10px 50px;
+    border-bottom: 1px solid rgb(146, 33, 184);
+    border-collapse: collapse;
+}
+
+.my-table tbody tr {
+    transition: ease-in-out 0.3s;
+}
+
+.my-table tbody tr:hover{
+    background-color: #AD6FEF;
+}
+
+.table-wrap {
+    background-color: #caabcf;
+    padding: 1rem;
+    margin-top: 5rem;
+    border-radius: 10px;
+    margin-right:55px;
+}
